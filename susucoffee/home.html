@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trang chủ — Susu Coffee</title>
+  <link rel="icon" href="images/logo/susu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <div class="app">
+    <aside class="sidebar" id="sidebar-placeholder"></aside>
+    <main class="main">
+      <div class="topbar">
+        <div><h2>Trang chủ</h2><div class="small">Xin chào, nhân viên</div></div>
+        <div class="small" id="timeNow"></div>
+      </div>
+      <section class="page card">
+        <div class="grid cols-3">
+          <div class="card"><h3>Tổng nhân viên</h3><div id="statStaff" style="font-size:22px;font-weight:700">0</div></div>
+          <div class="card"><h3>Số bàn</h3><div id="statSeats" style="font-size:22px;font-weight:700">0</div></div>
+          <div class="card"><h3>Tổng món</h3><div id="statProducts" style="font-size:22px;font-weight:700">0</div></div>
+        </div>
+        <div style="margin-top:12px" class="card"><h3>Hoạt động gần đây (demo)</h3><div id="activity" class="small">Không có hoạt động</div></div>
+      </section>
+    </main>
+  </div>
+<script src="js/app.js"></script>
+</body>
+</html>

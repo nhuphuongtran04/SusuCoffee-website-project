@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale-1" />
+  <title>Đăng nhập — Susu Coffee</title>
+  <link rel="icon" href="images/logo/susu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="login">
+  <div id="app" class="app">
+    <div id="loginWrap" class="login-wrap">
+      <div class="login-card">
+        <div class="brand">
+          <div class="logo"><img src="images/logo/susu.svg" alt="logo" style="width:100%; height:auto;"></div>
+          <div>
+            <h1>Susu Coffee</h1>
+            <div class="small">Nhân viên</div>
+          </div>
+        </div>
+        <form id="loginForm" style="margin-top:12px">
+          <label>Tài khoản</label>
+          <input id="username" name="username" type="text" placeholder="staff" required />
+          <label>Mật khẩu</label>
+          <div style="display:flex;align-items:center;gap:8px">
+            <input id="password" name="password" type="password" placeholder="1234" required />
+          </div>
+          <div style="display:flex;gap:10px;margin-top:6px">
+            <button class="btn-primary" type="submit">Đăng nhập</button>
+            <button type="button" class="btn-ghost" id="demoBtn">Đăng nhập thử</button>
+          </div>
+          <div class="small" style="margin-top:10px">Tài khoản demo: <b>staff</b> / <b>1234</b></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script>
+(function(){
+  // Ensure default staff exists
+  function ensureDefaultStaff(){
+    try{
+      const raw = localStorage.getItem('qn_staff');
+      if(!raw){ 
+        const def = [{id:1, username:'staff', password:'1234', name:'Staff'}];
+        localStorage.setItem('qn_staff', JSON.stringify(def));
+        return def;
+      }
+      const arr = JSON.parse(raw);
+      if(!Array.isArray(arr) || arr.length===0){
+        const def = [{id:1, username:'staff', password:'1234', name:'Staff'}];
+        localStorage.setItem('qn_staff', JSON.stringify(def));
+        return def;
+      }
+      return arr;
+    }catch(e){
+      const def = [{id:1, username:'staff', password:'1234', name:'Staff'}];
+      localStorage.setItem('qn_staff', JSON.stringify(def));
+      return def;
+    }
+  }
+
+  ensureDefaultStaff();
+
+  const form = document.getElementById('loginForm');
+  const demoBtn = document.getElementById('demoBtn');
+
+  function doLogin(u,p){
+    const staff = JSON.parse(localStorage.getItem('qn_staff')||'[]')||[];
+    const user = (staff||[]).find(x=>x.username===u && x.password===p);
+    if(user){
+      // set simple session flag
+      try{ localStorage.setItem('qn_auth', JSON.stringify({userId:user.id, username:user.username, name:user.name, ts:Date.now()})); }catch(e){}
+      window.location.href = 'home.html';
+      return true;
+    }
+    return false;
+  }
+
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const u = document.getElementById('username').value.trim();
+      const p = document.getElementById('password').value;
+      if(!u || !p) { alert('Nhập tài khoản và mật khẩu'); return; }
+      if(doLogin(u,p)) return;
+      alert('Sai tài khoản hoặc mật khẩu');
+    });
+  }
+
+  if(demoBtn){
+    demoBtn.addEventListener('click', function(){
+      document.getElementById('username').value = 'staff';
+      document.getElementById('password').value = '1234';
+      form.dispatchEvent(new Event('submit'));
+    });
+  }
+})();
+</script>
+
+<script src="js/app.js"></script>
+</body>
+</html>

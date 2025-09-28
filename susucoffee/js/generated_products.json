@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Americano",
+    "price": 35000,
+    "img": "images/list_drink/coffee/americano.png"
+  },
+  {
+    "id": 2,
+    "name": "Black Coffee",
+    "price": 35000,
+    "img": "images/list_drink/coffee/black_coffee.png"
+  },
+  {
+    "id": 3,
+    "name": "Cafe Muoi",
+    "price": 35000,
+    "img": "images/list_drink/coffee/cafe_muoi.png"
+  },
+  {
+    "id": 4,
+    "name": "Cafe Sua",
+    "price": 35000,
+    "img": "images/list_drink/coffee/cafe_sua.png"
+  },
+  {
+    "id": 5,
+    "name": "Capuchino",
+    "price": 35000,
+    "img": "images/list_drink/coffee/capuchino.png"
+  },
+  {
+    "id": 6,
+    "name": "Matcha Latte",
+    "price": 35000,
+    "img": "images/list_drink/coffee/matcha_latte.png"
+  },
+  {
+    "id": 7,
+    "name": "Sua Tuoi Cafe",
+    "price": 35000,
+    "img": "images/list_drink/coffee/sua_tuoi_cafe.png"
+  },
+  {
+    "id": 8,
+    "name": "Ep Ca Rot",
+    "price": 35000,
+    "img": "images/list_drink/juice/ep_ca_rot.png"
+  },
+  {
+    "id": 9,
+    "name": "Nuoc Ep Cam",
+    "price": 35000,
+    "img": "images/list_drink/juice/nuoc_ep_cam.png"
+  },
+  {
+    "id": 10,
+    "name": "Nuoc Ep Oi",
+    "price": 35000,
+    "img": "images/list_drink/juice/nuoc_ep_oi.png"
+  },
+  {
+    "id": 11,
+    "name": "Nuoc Ep Tao",
+    "price": 35000,
+    "img": "images/list_drink/juice/nuoc_ep_tao.png"
+  },
+  {
+    "id": 12,
+    "name": "Nuoc Ep Thom",
+    "price": 35000,
+    "img": "images/list_drink/juice/nuoc_ep_thom.png"
+  },
+  {
+    "id": 13,
+    "name": "Sua Tuoi Tran Chau Duong Den",
+    "price": 35000,
+    "img": "images/list_drink/milktea/sua_tuoi_tran_chau_duong_den.png"
+  },
+  {
+    "id": 14,
+    "name": "Tra Sua Tran Chau Duong Den",
+    "price": 35000,
+    "img": "images/list_drink/milktea/tra_sua_tran_chau_duong_den.png"
+  },
+  {
+    "id": 15,
+    "name": "Soda Chanh",
+    "price": 35000,
+    "img": "images/list_drink/soda/soda_chanh.png"
+  },
+  {
+    "id": 16,
+    "name": "Soda Dau",
+    "price": 35000,
+    "img": "images/list_drink/soda/soda_dau.png"
+  },
+  {
+    "id": 17,
+    "name": "Soda Tao Xanh Bac Ha",
+    "price": 35000,
+    "img": "images/list_drink/soda/soda_tao_xanh_bac_ha.png"
+  },
+  {
+    "id": 18,
+    "name": "Soda Viet Quat",
+    "price": 35000,
+    "img": "images/list_drink/soda/soda_viet_quat.png"
+  },
+  {
+    "id": 19,
+    "name": "Cherry Long Nhan",
+    "price": 35000,
+    "img": "images/list_drink/tea/cherry_long_nhan.png"
+  },
+  {
+    "id": 20,
+    "name": "Lipton Xi Muoi",
+    "price": 35000,
+    "img": "images/list_drink/tea/lipton_xi_muoi.png"
+  },
+  {
+    "id": 21,
+    "name": "Luc Tra Machiato",
+    "price": 35000,
+    "img": "images/list_drink/tea/luc_tra_machiato.png"
+  },
+  {
+    "id": 22,
+    "name": "Nuoc Chanh",
+    "price": 35000,
+    "img": "images/list_drink/tea/nuoc_chanh.png"
+  },
+  {
+    "id": 23,
+    "name": "Tra Dao Cam Sa",
+    "price": 35000,
+    "img": "images/list_drink/tea/tra_dao_cam_sa.png"
+  },
+  {
+    "id": 24,
+    "name": "Tra Den Machiato",
+    "price": 35000,
+    "img": "images/list_drink/tea/tra_den_machiato.png"
+  },
+  {
+    "id": 25,
+    "name": "Tra Gung Mat Ong",
+    "price": 35000,
+    "img": "images/list_drink/tea/tra_gung_mat_ong.png"
+  },
+  {
+    "id": 26,
+    "name": "Tra Lipton Chanh",
+    "price": 35000,
+    "img": "images/list_drink/tea/tra_lipton_chanh.png"
+  },
+  {
+    "id": 27,
+    "name": "Tra Lipton Thao Moc",
+    "price": 35000,
+    "img": "images/list_drink/tea/tra_lipton_thao_moc.png"
+  },
+  {
+    "id": 28,
+    "name": "Tra Oi Hong Dau Tay",
+    "price": 35000,
+    "img": "images/list_drink/tea/tra_oi_hong_dau_tay.png"
+  },
+  {
+    "id": 29,
+    "name": "Tra Sen Vang",
+    "price": 35000,
+    "img": "images/list_drink/tea/tra_sen_vang.png"
+  },
+  {
+    "id": 30,
+    "name": "Tra Vai Bac Ha",
+    "price": 35000,
+    "img": "images/list_drink/tea/tra_vai_bac_ha.png"
+  }
+]

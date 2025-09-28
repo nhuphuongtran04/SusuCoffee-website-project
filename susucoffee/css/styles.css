@@ -1,0 +1,103 @@
+:root{--bg:#f5f7fb;--card:#ffffff;--muted:#6b7280;--accent:#0ea5a4;--danger:#ef4444}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0; background:var(--bg); color:#0f172a}
+.app{min-height:100vh; display:flex}
+.login-wrap{display:flex; align-items:center; justify-content:center; width:100%; padding:40px}
+.login-card{width:420px; background:var(--card); padding:28px; border-radius:12px; box-shadow:0 6px 20px rgba(2,6,23,0.08)}
+.brand{display:flex; gap:12px; align-items:center}
+.brand .logo {width: 72px;height: 72px;border-radius: 12px;overflow: hidden;background: transparent;display: block;flex: 0 0 72px;}
+.brand .logo img {width: 100%;height: 100%;object-fit: cover;display: block;}
+
+small, .small{font-size:13px; color:var(--muted)}
+input,select{padding:10px 12px; border:1px solid #e6eef7; border-radius:8px; background:#fbfeff; width:100%; margin-top:6px}
+button, a.btn-primary{padding:10px 12px; border-radius:8px; border:0; cursor:pointer; text-decoration:none; display:inline-block}
+.btn-primary{background:var(--accent); color:white}
+.btn-ghost{background:transparent;border:1px solid #e6eef7}
+.sidebar{width:260px; background:var(--card); padding:18px; border-right:1px solid #eef2f7}
+.sidebar{flex:0 0 260px; min-width:260px}
+
+.nav{display:flex; flex-direction:column; gap:10px; margin-top:18px}
+.nav a{display:block; padding:10px 12px; border-radius:8px; text-decoration:none; color:inherit}
+.nav a.active{background:#ecfeff}
+.main{flex:1; padding:20px}
+.topbar{display:flex; justify-content:space-between; align-items:center; margin-bottom:18px}
+.card{background:var(--card); padding:14px; border-radius:10px; box-shadow:0 2px 10px rgba(2,6,23,0.03); margin-bottom:12px}
+.grid{display:grid; gap:12px}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.table{width:100%; border-collapse:collapse}
+.table th, .table td{padding:8px; border-bottom:1px solid #f1f5f9; text-align:left}
+.products{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+.product{padding:12px; border-radius:10px; display:flex; gap:12px; align-items:center}
+.product .img{width:64px;height:64px;border-radius:8px;background:#f8fafc;display:flex;align-items:center;justify-content:center;font-weight:700}
+.cart{position:fixed; right:20px; bottom:20px; width:320px}
+.seats{display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:12px}
+.seat{padding:12px;border-radius:10px; display:flex;flex-direction:column;gap:6px; align-items:flex-start}
+.seat.free{background:#f8fff9; border:1px dashed #d1fae5}
+.seat.occupied{background:#fff7f7;border:1px solid #fecaca}
+@media (max-width:900px){.sidebar{display:none}.main{padding:12px}.products{grid-template-columns:repeat(2,1fr)}}
+
+.icon{width:18px;height:18px;vertical-align:middle;margin-right:8px}
+.input-icon{width:20px;height:20px}
+
+/* --- CSS cho Trang Danh sách món (products.html) --- */
+.products-grid {display: grid;grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));gap: 16px;}
+.product-card {border: 1px solid #eee;border-radius: 8px;overflow: hidden;display: flex;flex-direction: column;background: #fff;box-shadow: 0 2px 4px rgba(0,0,0,0.05);}
+.product-card-img {height: 140px;background-size: cover;background-position: center;background-color: #f0f0f0;}
+.product-card-info {padding: 10px;display: flex;flex-direction: column;flex-grow: 1;}
+.product-card-name {font-weight: 600;margin-bottom: 8px;flex-grow: 1;}
+.product-card-footer {display: flex;justify-content: space-between;align-items: center;}
+.product-card-price {font-size: 0.9em;font-weight: bold;color: #333;}
+
+/* --- CSS cho Trang Quản lý món (products_admin.html) --- */
+.products-admin-list {display: flex;flex-direction: column;gap: 10px;}
+.product-admin-item {display: flex;align-items: center;gap: 12px;padding: 8px;border: 1px solid #eee;border-radius: 6px;}
+.product-admin-item .img {width: 50px;height: 50px;border-radius: 4px;background-size: cover;background-position: center;flex-shrink: 0;}
+.product-admin-item .product-info {flex-grow: 1;}
+.product-admin-item .product-actions {margin-left: auto; /* Quan trọng: Đẩy nút sang phải */display: flex;gap: 8px;}
+
+/* --- CSS cho Modal và Form --- */
+.modal {position: fixed; inset: 0; z-index: 1000;background: rgba(0,0,0,0.5);display: flex; align-items: center; justify-content: center;}
+.modal-content {background: white; padding: 20px; border-radius: 8px;width: 90%; max-width: 400px;}
+.modal-content form { display: flex; flex-direction: column; gap: 10px; }
+.modal-content .form-actions {display: flex; gap: 8px; justify-content: flex-end; margin-top: 10px;}
+.admin-form { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.admin-form .form-actions { margin-left: auto; }
+
+/* --- CSS Thêm cho trang Quản lý chỗ ngồi --- */
+.seats-layout {display: flex;gap: 16px;align-items: flex-start;}
+.seats-main-content {flex: 1; /* Chiếm phần lớn không gian */}
+.seat-details-panel-wrapper {width: 380px;flex-shrink: 0; /* Không co lại */position: sticky; /* Dính lại khi cuộn */top: 20px;}
+
+#seatDetailsPanel .placeholder {color: var(--muted);text-align: center;padding: 40px 20px;}
+
+.seat-details-header {display: flex;justify-content: space-between;align-items: center;margin-bottom: 12px;}
+
+.seat-details-header h3 {margin: 0;}
+
+.seat-details-actions {display: flex;gap: 8px;margin-top: 16px;}
+
+.order-list {margin-top: 12px;max-height: 250px;overflow-y: auto;}
+
+.order-item {display: flex;justify-content: space-between;padding: 6px 0;border-bottom: 1px solid #f1f5f9;}
+
+.order-item:last-child {border-bottom: none;}
+
+/* --- Bổ sung cho trang Quản lý chỗ ngồi --- */
+.seat.active {border-color: var(--accent);box-shadow: 0 0 0 3px rgba(14, 165, 164, 0.5);transform: translateY(-2px);}
+
+#seatDetailsPanel .status {font-size: 12px;padding: 3px 8px;border-radius: 99px;font-weight: 600;margin-left: auto;}
+#seatDetailsPanel .status.occupied {background: #fff1f2;color: #be123c;}
+#seatDetailsPanel .status.available {background: #f0fdf4;color: #15803d;}
+
+.seat-details-body { margin: 16px 0; }
+.seat-details-body h4 { margin-top: 0; margin-bottom: 8px; }
+
+.order-list { max-height: 250px; overflow-y: auto; padding-right: 5px; }
+.order-table { width: 100%; border-collapse: collapse; }
+.order-table td { padding: 8px 4px; border-bottom: 1px solid #f3f4f6; font-size: 14px; }
+.order-table tr:last-child td { border-bottom: none; }
+
+.order-total {display: flex;justify-content: space-between;align-items: center;margin-top: 12px;padding-top: 12px;border-top: 2px solid #e5e7eb;font-size: 1.1rem;}
+
+.seat-details-actions {display: flex;flex-wrap: wrap;gap: 8px;margin-top: 16px;border-top: 1px solid #f3f4f6;padding-top: 16px;}
+.seat-details-actions .btn-primary.full {flex: 1 1 100%;}
