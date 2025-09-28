@@ -1,6 +1,6 @@
-# **INTRODUCTION TO THE SUSU COFFEE PROJECT**
+# **INTRODUCTION TO SUSU COFFEE PROJECT**
 
-## **Purpose of the service**
+## **1. Purpose of the service**
 
 **Target users:** The intended users of this project are owners or managers of small-to-medium cafés and drink shops.
 
@@ -12,14 +12,14 @@
 
 **Project solution:** The "Susu Coffee Management" website was created to provide a centralized, simple, and intuitive management tool that addresses the problems above and helps make shop operations smoother and more efficient.
 
-## **Overview**
+## **2. Overview**
 
 * **Development time:** 1 month.
 * **Team members:** 1 person (personal project).
 * **Technologies used:** HTML, CSS, and JavaScript.
 * **Why these technologies:** I chose these technologies because they are the core foundations of the web and allow rapid development of an intuitive user interface that runs directly in the browser without requiring a complex backend. Given the goal of quickly solving basic management needs for users, this choice is the most suitable.
 
-## **Problem-solving approach**
+## **3. Problem-solving approach**
 
 To address the problems listed above, the project focuses on four main feature groups:
 
@@ -43,7 +43,7 @@ To address the problems listed above, the project focuses on four main feature g
    * **Function:** Allows managers to add, edit, and delete staff information, including shifts and pay rates.
    * **How it helps:** Digitizes and centralizes personnel data, making information lookup, scheduling, and payroll calculations much simpler and more accurate.
 
-## **Improvements & future updates**
+## **4. Improvements & future updates**
 
 **Features to develop:**
 
@@ -52,6 +52,6 @@ To address the problems listed above, the project focuses on four main feature g
 
 **Why:** These features will give managers a broader and deeper view of the business situation, enabling strategic decisions to optimize costs and increase profits.
 
-## **PR points**
+## **5. PR points**
 
 * **User experience focus:** The interface is designed to be minimal, intuitive, and easy to use, targeted at non-technical users so they can adopt and use it immediately without complex training.
